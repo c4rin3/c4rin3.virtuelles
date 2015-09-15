@@ -1,0 +1,222 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	width:100%;
+	height:100%;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	margin-left:50px;
+	margin:0px;
+	background-image:url(img/bg_page.gif);
+	background-attachment:fixed;
+}
+
+.animflash{
+	z-index:0;
+	width:707px;
+	height:500px;
+}
+
+a:link {
+	color: black;
+	text-decoration:none;
+}
+
+a:visited {
+	color: black;
+	text-decoration:none;
+}
+
+a:hover { 
+	color: #000;
+	background-color: #CCC;
+}
+
+a:active {
+	color: black;
+	text-decoration:none;
+} 
+
+h1{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: xx-large;
+}
+
+h2{ 
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+}
+
+p{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-weight:normal;
+	line-height:normal;
+	font-size: 12px;
+}
+
+#header {
+	position: fixed;
+	background:rgba(255,255,255, 0.9);
+	top:0px;
+	left:40px;
+	width: 180px;
+	padding-left:10px;
+	padding-right:10px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	z-index: 2;
+	-moz-box-shadow : 2px 2px 3px #444444;
+	-webkit-box-shadow : 2px 2px 3px #444444;
+	box-shadow: 2px 2px 3px #444444;
+}
+
+#logosite{
+	position:relative;
+	top:-15px;
+	height:32px;
+}
+#nomdusite{
+	position: relative;
+	top:0px;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+	border-bottom-style:dotted;
+	border-top-style:dotted;
+}
+
+ul.listecategories, ul.listeprojets{
+	position: relative;
+	padding-left:0em;
+	list-style-type:none;
+}
+
+ul.listecategories, li.listeprojets{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-weight:bold;
+	font-size: 16px;
+}
+
+ul.listeprojets, li.listeprojets{
+	text-transform:none;
+	font-size: 12px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-weight:normal;
+	padding-left:0.5em;
+}
+
+#navprojet {
+	background:rgba(255,255,255,.85);
+	position : fixed;
+	left:265px;
+	top:56px;
+	width : 220px;
+	padding-left:5px;
+	padding-right:5px;
+	z-index : 2;
+	-moz-box-shadow : 2px 2px 3px #444444;
+	-webkit-box-shadow : 2px 2px 3px #444444;
+	box-shadow: 2px 2px 3px #444444;
+}
+
+#infosprojet {
+	width : 220px;
+	margin-bottom:15px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+#buttons {
+	position:relative;
+	/*height:25px;*/
+}
+
+#content {
+	position:absolute;
+	left:0px;
+	top:0px;
+	/*width:1156px;*/
+	width: 100%;
+	height :100%;
+	overflow:hidden;
+	z-index:0;
+}
+
+
+ul.images, li.images {
+	float:left;
+}
+
+#images {
+	position:absolute;
+	left:0px;
+	top:36px;
+	list-style:none;
+	z-index:0;
+}
+
+.blocimageprojet {
+	position:relative;
+	float:left;
+	left: 0px;
+	top:0px;
+	background: white;
+	padding :10px;
+	margin: 10px;
+	margin-top:0px;
+	z-index:0;
+}
+.blocimagevide {
+	position:relative;
+	float:left;
+	left: 0px;
+	width:210px;
+	padding :10px;
+	margin: 10px;
+	margin-top:0px;
+}
+
+.bloctexte{
+	position:relative;
+	float:left;
+	left: 0px;
+	top:0px;
+	width:550px;
+	height:500px;
+	background: white;
+	padding :10px;
+	margin: 10px;
+	margin-top:0px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+.CollapsiblePanel {
+	margin: 0px;
+	padding: 0px;
+}
+
+#CollapsiblePanel3 {
+	line-height:10px;
+}
+
+.CollapsiblePanelTab {
+	cursor: pointer;
+}
+
+.CollapsiblePanelContent {
+	margin-bottom:0px;
+	padding:0px;
+}
+
+.CollapsiblePanelTab a {
+	color: black;
+}
+
+.CollapsiblePanelOpen .CollapsiblePanelTab {
+}
+
+.CollapsiblePanelClosed .CollapsiblePanelTab {
+}
+
+.CollapsiblePanelTabHover,  .CollapsiblePanelOpen .CollapsiblePanelTabHover {
+}
+
+.CollapsiblePanelFocused .CollapsiblePanelTab {
+}

@@ -1,0 +1,396 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+-----
+change by carine bigot for c4rin3.virtuelles.fr - 2013
+-----
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+::selection {
+  background: yellow; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: yellow; /* Gecko Browsers */
+}
+
+/* #Site Styles
+================================================== */
+/* borders*/
+#top, #bottom, #left, #right {
+	position:fixed;
+	background:#000;
+	z-index:9999;
+}
+#top{
+	height:5px;
+	top:0;
+	right:0;
+	width:100%;
+}
+#bottom{
+	height:5px;
+	bottom:0;
+	right:0;
+	width:100%;
+}
+#left{
+	width:5px;
+	top:0;
+	left:0;
+	height:100%;
+}
+#right{
+	width:5px;
+	top:0;
+	right:0;
+	height:100%;
+}
+/* HEADER
+================================================== */
+header {
+	position:fixed;
+	z-index:5;
+	float:left;
+	padding-top: 30px;
+	background:#fff;
+}
+header hr { border: solid #000; border-width: 3px 0 0; clear: both; margin:0;margin-top: 20px; height: 0; }
+header {
+    text-align: justify;
+    letter-spacing: 1px;
+}
+header h1, header nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+header h1 {
+    /*width: 50%;*/
+    font-size:35px;
+}
+header nav {
+    float: right;
+    padding-top: 1.5em;
+}
+header nav a {
+    /*padding: 0 0.6em;*/
+    white-space: nowrap;
+}
+header #home a {
+    color:#000;
+}
+header #home a:hover {
+    text-decoration:none;
+}
+
+.glitch{
+  color:black;
+  position:relative;
+  /*width:200px;*/
+  margin:0 auto;
+}
+@keyframes noise-anim {
+  0% {clip: rect(70px, 450px, 76px, 0);}
+  20% {clip: rect(29px, 450px, 16px, 0);}
+  40% {clip: rect(76px, 450px, 3px, 0);}
+  60% {clip: rect(42px, 450px, 78px, 0);}
+  80% {clip: rect(5px, 450px, 13px, 0);}
+  100% {clip: rect(53px, 450px, 5px, 0);}
+}
+.glitch:after{
+  content:attr(data-text);
+  position:absolute;
+  left:2px;
+  text-shadow:-1px 0 grey;
+  top:0;
+  color:black;
+  background:white;
+  overflow:hidden;
+  clip:rect(0,900px,0,0); 
+  animation:noise-anim 2s infinite linear alternate-reverse;
+}
+@keyframes noise-anim-2 {
+  0% {clip: rect(70px, 450px, 76px, 0);}
+  20% {clip: rect(29px, 450px, 16px, 0);}
+  40% {clip: rect(76px, 450px, 3px, 0);}
+  60% {clip: rect(42px, 450px, 78px, 0);}
+  80% {clip: rect(15px, 450px, 13px, 0);}
+  100% {clip: rect(53px, 450px, 5px, 0);}
+}
+.glitch:before{
+  content:attr(data-text);
+  position:absolute;
+  left:-2px;
+  text-shadow:1px 0 grey; 
+  top:0;
+  color:black;
+  background:white;
+  overflow:hidden;
+  clip:rect(0,900px,0,0); 
+  animation:noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+
+
+/* PROJECT
+================================================== */
+#project {
+	position:relative;
+	top:160px;
+	background:#fff;
+}
+#project p, li{
+	color: #555;
+}
+#project hr.bottom{
+	margin:25px 0;
+}
+@font-face {
+	font-family: 'ElegantIcons';
+	src:url('../fonts/ElegantIcons/ElegantIcons.eot');
+	src:url('../fonts/ElegantIcons/ElegantIcons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ElegantIcons/ElegantIcons.woff') format('woff'),
+		url('../fonts/ElegantIcons/ElegantIcons.ttf') format('truetype'),
+		url('../fonts/ElegantIcons/ElegantIcons.svg#ElegantIcons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.icon_close, .arrow_carrot-left, .arrow_carrot-right, .icon_expand,.icon_condense {
+	font-family: 'ElegantIcons';
+	position:relative;
+	float: right;
+	color:#b2b2b2;
+	display: inline-block;
+	font-size: 0px;
+	margin: 0px 0px 0px 10px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	/*border-radius: 50%;*/
+	box-shadow: 0 0 0 1px #b2b2b2;
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+.icon_close:before, .arrow_carrot-left:before, .arrow_carrot-right:before, .icon_expand:before,.icon_condense:before {
+	speak: none;
+	font-size: 29px;
+	line-height: 29px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	display: block;
+}
+.icon_expand:before, .icon_condense:before {
+	font-size: 18px;
+}
+.icon_close:before {
+	content: "\4d";
+}
+.arrow_carrot-left:before {
+	content: "\34";
+}
+.arrow_carrot-right:before {
+	content: "\35";
+}
+.icon_expand:before {
+	content: "\30";
+}
+.icon_condense:before {
+	content: "\2f";
+}
+.icon_close:hover, .arrow_carrot-left:hover, .arrow_carrot-right:hover, .icon_expand:hover, .icon_condense:hover  {
+	cursor:pointer;
+	color:#555;
+	color:#000;
+	text-decoration:none;
+	-webkit-transition: box-shadow 0.2s;
+	-moz-transition: box-shadow 0.2s;
+	-o-transition: box-shadow 0.2s;
+	-ms-transition: box-shadow 0.2s;
+	transition: box-shadow 0.2s;
+	box-shadow: 0 0 0 2px rgba(0,0,0,0.5);
+}
+#portrait {
+	float: right;
+    margin: 0px 0px 10px 30px;
+}
+/* VIDEOS
+================================================== */
+.js-video {
+	height: 0;
+	padding-top: 25px;
+	padding-bottom: 67.5%;
+	margin-bottom: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.js-video.widescreen {
+	padding-bottom: 57.25%;
+}
+.js-video.vimeo {
+	padding-top: 0;
+}
+.js-video embed, .js-video iframe, .js-video object, .js-video video {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+/* NAVIGATION 
+================================================== */
+#nav {
+	position: relative;
+	top:160px;
+	background:#fff;
+}
+#nav a, #nav a:hover{
+	text-decoration: none;
+}
+/* FOOTER 
+================================================== */
+#footer {
+	position: relative;
+	top:160px;
+	padding-bottom:20px;
+	float: left;
+	text-align:center;
+	background:#fff;
+}
+.hi-icon-wrap {
+	margin: 0 auto;
+	padding: 2em 0 3em;
+}
+.hi-icon-wrap a, a:visited,a:hover {
+	color:#000;
+	text-decoration:none
+}
+.hi-icon {
+	display: inline-block;
+	font-size: 0px;
+	cursor: pointer;
+	margin: 15px 20px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	color: #000;
+}
+.hi-icon:after {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	content: '';
+	-webkit-box-sizing: content-box; 
+	-moz-box-sizing: content-box; 
+	box-sizing: content-box;
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome/fontawesome-webfont.eot?v=4.1.0');
+  src: url('../fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../fonts/fontawesome/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../fonts/fontawesome/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../fonts/fontawesome/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.hi-icon:before {
+  font-family: 'FontAwesome';
+	speak: none;
+	font-size: 30px;
+	line-height: 60px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	display: block;
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+.hi-icon-pinterest:before, .hi-icon-twitter:before, .hi-icon-vimeo:before, .hi-icon-wordpress:before, .hi-icon-delicious:before, .hi-icon-codepen:before {
+    content: attr(data-icon);
+}
+/* Effect base */
+.hi-icon-effect-9 .hi-icon {
+	-webkit-transition: box-shadow 0.2s;
+	-moz-transition: box-shadow 0.2s;
+	transition: box-shadow 0.2s;
+}
+.hi-icon-effect-9 .hi-icon:after {
+	top: 0;
+	left: 0;
+	padding: 0;
+	box-shadow: 0 0 0 2px #555;
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.5s, opacity 0.2s;
+	-o-transition: -o-transform 0.5s, opacity 0.2s;
+	transition: transform 0.5s, opacity 0.2s;
+}
+/* Effect hover */
+.hi-icon-effect-9b .hi-icon:hover:after {
+	-webkit-transform: scale(0.86);
+	-moz-transform: scale(0.86);
+	-ms-transform: scale(0.86);
+	-o-transform: scale(0.86);
+	transform: scale(0.86);
+}
+.hi-icon-effect-9b .hi-icon:hover {
+	box-shadow: 0 0 0 5px rgba(0,0,0,0.2);
+	text-decoration:none
+}
+/* #Media Queries
+================================================== */
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		#size {display:none}
+	}
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		header {position:absolute;}
+	}
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		header {position:absolute;}
+	}
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
